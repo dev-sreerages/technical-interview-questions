@@ -1,5 +1,193 @@
 # Index
-1. <a href="#react-technical-interview-questions-and-answers">React</a>
+## Frontend
+- <a href="#javascript-technical-interview-questions-and-answers">Javascript</a>
+- <a href="#react-technical-interview-questions-and-answers">React</a>
+## Backend
+
+# JavaScript Technical Interview Questions and Answers
+
+## 1. What is JavaScript?
+**Answer**: JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is widely used for web development to create interactive and dynamic web pages.
+
+## 2. What are the data types in JavaScript?
+**Answer**: JavaScript has the following data types:
+- Primitive: Number, String, Boolean, Null, Undefined, Symbol, and BigInt.
+- Non-Primitive: Object (including Arrays, Functions, and more).
+
+## 3. What is the difference between `let`, `var`, and `const`?
+**Answer**:
+- `var`: Function-scoped, can be re-declared and updated.
+- `let`: Block-scoped, cannot be re-declared but can be updated.
+- `const`: Block-scoped, cannot be re-declared or updated (values can be mutable if they are objects or arrays).
+
+## 4. What is hoisting in JavaScript?
+**Answer**: Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope (function or global). This means variables and functions can be used before they are declared.
+
+## 5. What is the difference between `==` and `===`?
+**Answer**:
+- `==` (loose equality): Compares values for equality, performing type conversion if necessary.
+- `===` (strict equality): Compares values for equality without type conversion.
+
+## 6. What is a closure?
+**Answer**: A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope. It allows for data privacy and maintaining state.
+
+## 7. What is the event loop?
+**Answer**: The event loop is a mechanism that allows JavaScript to perform non-blocking I/O operations, despite being single-threaded. It continuously checks the message queue and executes callbacks as needed.
+
+## 8. What are Promises?
+**Answer**: Promises are objects that represent the eventual completion (or failure) of an asynchronous operation. They have three states: pending, fulfilled, and rejected.
+
+## 9. What is async/await?
+**Answer**: `async/await` is a syntactic sugar built on Promises, allowing you to write asynchronous code in a synchronous manner. It makes the code easier to read and maintain.
+
+## 10. What is the difference between `call`, `apply`, and `bind`?
+**Answer**:
+- `call`: Invokes a function with a specified `this` context and arguments provided individually.
+- `apply`: Invokes a function with a specified `this` context and arguments provided as an array.
+- `bind`: Creates a new function with a specified `this` context and optionally, initial arguments.
+
+## 11. What is the difference between `undefined` and `null`?
+**Answer**:
+- `undefined`: A variable that has been declared but has not been assigned a value.
+- `null`: An assignment value that represents no value or no object.
+
+## 12. What is the `this` keyword?
+**Answer**: The `this` keyword refers to the context in which a function is executed. Its value depends on how the function is called (e.g., as a method, constructor, or standalone function).
+
+## 13. What are arrow functions?
+**Answer**: Arrow functions are a shorter syntax for function expressions that do not have their own `this`, `arguments`, `super`, or `new.target` bindings. They are often used for concise function expressions.
+
+## 14. What is the spread operator?
+**Answer**: The spread operator (`...`) allows an iterable (e.g., array or object) to be expanded in places where zero or more arguments or elements are expected. It can be used for copying or merging arrays and objects.
+
+## 15. What is destructuring?
+**Answer**: Destructuring is a syntax that allows you to unpack values from arrays or properties from objects into distinct variables.
+
+## 16. What are template literals?
+**Answer**: Template literals are string literals that allow embedded expressions. They are enclosed by backticks (`` ` ``) and can contain placeholders indicated by `${expression}`.
+
+## 17. What is the DOM?
+**Answer**: The Document Object Model (DOM) is an interface that represents the structure of a document (e.g., HTML or XML) and allows scripts to interact with and manipulate the document's content and structure.
+
+## 18. What is the difference between `innerHTML` and `textContent`?
+**Answer**:
+- `innerHTML`: Gets or sets the HTML content of an element, including tags.
+- `textContent`: Gets or sets the text content of an element, excluding tags.
+
+## 19. What are event delegation and event bubbling?
+**Answer**:
+- **Event Delegation**: A technique of handling events by using a single event listener on a parent element to manage events for multiple child elements.
+- **Event Bubbling**: A process where an event starts from the target element and propagates upward through the DOM hierarchy.
+
+## 20. What is a prototype in JavaScript?
+**Answer**: A prototype is an object from which other objects inherit properties and methods. Every JavaScript object has a prototype, which is used for inheritance and property sharing.
+
+## 21. What is the difference between `map`, `filter`, and `reduce`?
+**Answer**:
+- `map`: Creates a new array by applying a function to each element of an existing array.
+- `filter`: Creates a new array with elements that pass a specified test.
+- `reduce`: Reduces an array to a single value by applying a function to each element and accumulating the result.
+
+## 22. What is the purpose of the `fetch` API?
+**Answer**: The `fetch` API provides a modern way to make network requests and handle responses. It returns a Promise that resolves to the Response object.
+
+## 23. What is the difference between function declarations and function expressions?
+**Answer**:
+- **Function Declarations**: Function statements that are hoisted to the top of their scope.
+- **Function Expressions**: Functions defined within an expression and not hoisted.
+
+## 24. What is a callback function?
+**Answer**: A callback function is a function passed as an argument to another function, allowing it to be called back at a later time.
+
+## 25. What is the purpose of `Array.prototype.slice`?
+**Answer**: `Array.prototype.slice` creates a shallow copy of a portion of an array into a new array object, without modifying the original array.
+
+## 26. What is the difference between synchronous and asynchronous code?
+**Answer**:
+- **Synchronous Code**: Code that is executed sequentially, blocking the execution of subsequent code until the current operation completes.
+- **Asynchronous Code**: Code that allows other operations to be performed while awaiting the completion of an asynchronous task.
+
+## 27. What is the `typeof` operator?
+**Answer**: The `typeof` operator returns a string indicating the type of the operand. It can be used to check the data type of a variable.
+
+## 28. What is the purpose of `Array.prototype.forEach`?
+**Answer**: `Array.prototype.forEach` executes a provided function once for each array element. It is used for iterating over arrays.
+
+## 29. What is the difference between `Object.keys` and `Object.values`?
+**Answer**:
+- `Object.keys`: Returns an array of a given object's own enumerable property names.
+- `Object.values`: Returns an array of a given object's own enumerable property values.
+
+## 30. What is the `bind` method in JavaScript?
+**Answer**: The `bind` method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments.
+
+## 31. What is the difference between `window.onload` and `document.ready`?
+**Answer**:
+- `window.onload`: Fires when the entire page (including all dependent resources) has loaded.
+- `document.ready`: Fires when the DOM is fully loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+
+## 32. What is an IIFE (Immediately Invoked Function Expression)?
+**Answer**: An IIFE is a function that is executed immediately after it is defined. It is used to create a new scope and avoid polluting the global scope.
+
+## 33. What is the `new` keyword in JavaScript?
+**Answer**: The `new` keyword is used to create an instance of a user-defined object type or a built-in object with a constructor function.
+
+## 34. What is the purpose of `Array.prototype.concat`?
+**Answer**: `Array.prototype.concat` is used to merge two or more arrays, returning a new array without modifying the original arrays.
+
+## 35. What is the event object in JavaScript?
+**Answer**: The event object represents an event that takes place in the DOM. It contains properties and methods related to the event, such as `target`, `type`, and `preventDefault`.
+
+## 36. What is debouncing?
+**Answer**: Debouncing is a technique used to limit the rate at which a function is executed. It ensures that a function is invoked only once after a specified period of inactivity.
+
+## 37. What is throttling?
+**Answer**: Throttling is a technique used to limit the rate at which a function is executed. It ensures that a function is invoked at most once in a specified period.
+
+## 38. What is the difference between shallow and deep copying?
+**Answer**:
+- **Shallow Copying**: Creates a copy of an object's structure, but not the nested objects.
+- **Deep Copying**: Creates a copy of an object and all its nested objects, resulting in a completely independent copy.
+
+## 39. What is the `instanceof` operator?
+**Answer**: The `instanceof` operator checks if an object is an instance of a specific constructor or class. It returns `true` if the object is an instance, otherwise `false`.
+
+## 40. What are template literals?
+**Answer**: Template literals are string literals that allow embedded expressions. They are enclosed by backticks (`` ` ``) and can contain placeholders indicated by `${expression}`.
+
+## 41. How do you handle exceptions in JavaScript?
+**Answer**: Exceptions in JavaScript are handled using `try...catch` blocks, where code that may throw an exception is placed in the `try` block, and the error handling code is placed in the `catch` block.
+
+## 42. What is the purpose of `Object.assign`?
+**Answer**: `Object.assign` is used to copy the values of all enumerable own properties from one or more source objects to a target object. It returns the target object.
+
+## 43. What is the difference between `==` and `===`?
+**Answer**:
+- `==` (loose equality): Compares values for equality, performing type conversion if necessary.
+- `===` (strict equality): Compares values for equality without type conversion.
+
+## 44. What is the `nullish coalescing operator`?
+**Answer**: The nullish coalescing operator (`??`) is a logical operator that returns its right-hand operand when its left-hand operand is `null` or `undefined`, otherwise it returns its left-hand operand.
+
+## 45. What are JavaScript modules?
+**Answer**: JavaScript modules allow you to break up your code into separate files and import/export functionalities between them. They help in organizing and maintaining a codebase.
+
+## 46. What is a promise chain?
+**Answer**: A promise chain is a series of `.then` calls on a promise, where each `.then` returns a new promise. It allows for sequential asynchronous operations.
+
+## 47. What is the `Symbol` data type?
+**Answer**: `Symbol` is a primitive data type introduced in ES6. It is used to create unique identifiers for object properties, ensuring they do not clash with other property keys.
+
+## 48. What is the purpose of `Array.prototype.find`?
+**Answer**: `Array.prototype.find` returns the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function, it returns `undefined`.
+
+## 49. What is event propagation?
+**Answer**: Event propagation is the process by which an event travels through the DOM tree. It includes three phases: capturing phase, target phase, and bubbling phase.
+
+## 50. What is the purpose of the `finally` block in a `try...catch` statement?
+**Answer**: The `finally` block contains code that will always execute after the `try` and `catch` blocks, regardless of whether an exception was thrown or caught. It is used for cleanup operations.
+
+---
 
 # React Technical Interview Questions and Answers
 
